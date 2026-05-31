@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.w2a</groupId>
+  <artifactId>DataDrivenFramework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+<build>
+		 <plugins>
+              <plugin>  
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+				<testFailuresIgnore> false </testFailuresIgnore>
+				<suiteXmlFiles>
+				    <suiteXmlFile>src\test\resource\runner\testng.xml</suiteXmlFile>
+					
+					</suiteXmlFiles>
+		        </configuration>
+				
+			</plugin>
+			</plugins>
+		</build>
+		<dependencies>
+  <!-- POI JARS START -->
+  
+  
+		<!--  https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.5.1</version>
+    <scope>compile</scope>
+</dependency>	
+			
+			<!--  https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.5.1</version>
+    <scope>compile</scope>
+</dependency>
+			
+			<!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
+<dependency>
+    <groupId>org.dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>2.2.0</version>
+    <scope>compile</scope>
+</dependency>
+          
+		  <!--  https://mvnrepository.com/artifact/com.google.guava/guava -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>33.5.0-jre</version>
+    <scope>compile</scope>
+</dependency>
+			
+			<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+<dependency>
+    <groupId>org.apache.xmlbeans</groupId>
+    <artifactId>xmlbeans</artifactId>
+    <version>5.3.0</version>
+    <scope>compile</scope>
+</dependency>
+
+          <!--  https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.5.1</version>
+    <scope>compile</scope>
+</dependency>
+
+		<!-- POI JARS END -->
+		
+		<!--  https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+    <scope>compile</scope>
+</dependency>
+
+     <!--  https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.12.0</version>
+    <scope>test</scope>
+</dependency>
+
+       <!--  https://mvnrepository.com/artifact/com.google.code.guice/guice -->
+<dependency>
+    <groupId>com.google.code.guice</groupId>
+    <artifactId>guice</artifactId>
+    <version>1.0</version>
+    <type>pom</type>
+    <scope>compile</scope>
+</dependency>
+
+       <!--  https://mvnrepository.com/artifact/org.uncommons/reportng -->
+<dependency>
+    <groupId>org.uncommons</groupId>
+    <artifactId>reportng</artifactId>
+    <version>1.1.4</version>
+    <scope>test</scope>
+</dependency>
+       
+	   <!--  https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+<dependency>
+    <groupId>com.sun.mail</groupId>
+    <artifactId>javax.mail</artifactId>
+    <version>1.6.2</version>
+    <scope>compile</scope>
+</dependency>
+
+       <!--  https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+    <scope>compile</scope>
+</dependency>
+
+       <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+    <scope>compile</scope>
+</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
+<dependency>
+    <groupId>com.microsoft.playwright</groupId>
+    <artifactId>playwright</artifactId>
+    <version>1.57.0</version>
+    <scope>compile</scope>
+</dependency>
+  </dependencies>
+</project>
