@@ -1,0 +1,3 @@
+INFO    2026-01-26 16:24:23,922 [main] testcase.LoginTest  - Test Execution started !!!
+INFO    2026-01-26 16:24:23,924 [main] testcase.LoginTest  - OR properties file loaded
+INFO    2026-01-26 16:24:35,710 [main] testcase.LoginTest  - Launching microsoftedge Browser
